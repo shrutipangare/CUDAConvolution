@@ -1,0 +1,48 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"singularity"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "singularity"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+convolve.cu: In function 'void convolutionC1(Matrix, Filter, Matrix, float&)':
+convolve.cu:298:22: warning: 'cudaError_t cudaThreadSynchronize()' is deprecated [-Wdeprecated-declarations]
+  298 |     cudaThreadSynchronize();
+      |     ~~~~~~~~~~~~~~~~~^~
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda_runtime_api.h:1068:46: note: declared here
+ 1068 | extern __CUDA_DEPRECATED __host__ cudaError_t CUDARTAPI cudaThreadSynchronize(void);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+convolve.cu:308:22: warning: 'cudaError_t cudaThreadSynchronize()' is deprecated [-Wdeprecated-declarations]
+  308 |     cudaThreadSynchronize();
+      |     ~~~~~~~~~~~~~~~~~^~
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda_runtime_api.h:1068:46: note: declared here
+ 1068 | extern __CUDA_DEPRECATED __host__ cudaError_t CUDARTAPI cudaThreadSynchronize(void);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+convolve.cu: In function 'void convolutionC2(Matrix, Filter, Matrix, float&)':
+convolve.cu:339:22: warning: 'cudaError_t cudaThreadSynchronize()' is deprecated [-Wdeprecated-declarations]
+  339 |     cudaThreadSynchronize();
+      |     ~~~~~~~~~~~~~~~~~^~
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda_runtime_api.h:1068:46: note: declared here
+ 1068 | extern __CUDA_DEPRECATED __host__ cudaError_t CUDARTAPI cudaThreadSynchronize(void);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+convolve.cu:349:22: warning: 'cudaError_t cudaThreadSynchronize()' is deprecated [-Wdeprecated-declarations]
+  349 |     cudaThreadSynchronize();
+      |     ~~~~~~~~~~~~~~~~~^~
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda_runtime_api.h:1068:46: note: declared here
+ 1068 | extern __CUDA_DEPRECATED __host__ cudaError_t CUDARTAPI cudaThreadSynchronize(void);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+convolve.cu: In function 'void convolutionC3(Matrix, Filter, Matrix, float&)':
+convolve.cu:424:22: warning: 'cudaError_t cudaThreadSynchronize()' is deprecated [-Wdeprecated-declarations]
+  424 |     cudaThreadSynchronize();
+      |     ~~~~~~~~~~~~~~~~~^~
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cuda_runtime_api.h:1068:46: note: declared here
+ 1068 | extern __CUDA_DEPRECATED __host__ cudaError_t CUDARTAPI cudaThreadSynchronize(void);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+Checksum : 122756344698240, Time : 2.972 millisec
+Checksum : 122756344698240, Time : 2.512 millisec
+Checksum : 122756344698240, Time : 2.109 millisec
